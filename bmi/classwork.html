@@ -2,6 +2,50 @@
 <html>
 <head>
     <title>Student Calculator</title>
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 40px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #ccc;
+}
+
+.subject-score {
+    width: 60px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -9,21 +53,30 @@
         <table>
             <tr>
                 <th>mathematics</th>
-                <th>english</th>
-                <th>physics</th>
-                <th>chemistry</th>
-                <th>biology</th>
+                <td><input type="number" id="mathematics" class="subject-score"></td>
             </tr>
             <tr>
-                <td><input type="number" id="mathematics" class="subject-score"></td>
+                <th>english</th>
                 <td><input type="number" id="english" class="subject-score"></td>
+            </tr>
+            <tr>
+                <th>physics</th>
                 <td><input type="number" id="physics" class="subject-score"></td>
+            </tr>
+            <tr>
+                <th>chemistry</th>
                 <td><input type="number" id="chemistry" class="subject-score"></td>
+            </tr>
+            </tr>
+            <tr>
+                <th>biology</th>
                 <td><input type="number" id="biology" class="subject-score"></td>
             </tr>
         </table>
         <button onclick="calculateAverage()">Calculate Average</button>
         <p id="result"></p>
+        <p id="recommendation"></p>
+
     </div>
 </body>
 <script src="./bscript.js"></script>
