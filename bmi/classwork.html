@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Calculator</h1>
+        <table>
+            <tr>
+                <th>mathematics</th>
+                <th>english</th>
+                <th>physics</th>
+                <th>chemistry</th>
+                <th>biology</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="mathematics" class="subject-score"></td>
+                <td><input type="number" id="english" class="subject-score"></td>
+                <td><input type="number" id="physics" class="subject-score"></td>
+                <td><input type="number" id="chemistry" class="subject-score"></td>
+                <td><input type="number" id="biology" class="subject-score"></td>
+            </tr>
+        </table>
+        <button onclick="calculateAverage()">Calculate Average</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="./bscript.js"></script>
+</html>

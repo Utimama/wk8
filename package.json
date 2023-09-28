@@ -1,0 +1,15 @@
+{
+  "name": "touch.gitignore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "classwork.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "tailwindcss -i ./bmi/bmi.css -o ./bmi/bmi2.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
